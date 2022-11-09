@@ -23,10 +23,19 @@ path_to_mail = os.path.expanduser("~/Library/Mail/")
 os.chdir(path_to_mail)
 folder_name = glob.glob("V**")[0]
 
+synced_file_name = "SyncedFilesInfo.plist"
+
 os.chdir(os.path.expanduser("~/Downloads/sign-script"))
 
-path_to_library = os.path.expanduser(f"~/Library/Mail/{folder_name}/MailData/Signatures/")
+path_to_mail_data = os.path.expanduser(f"~/Library/Mail/{folder_name}/MailData")
+path_to_library = os.path.expanduser(f"{path_to_mail_data}/Signatures/")
 path_to_all_signatures_file = path_to_library + all_signatures_file_name
+path_to_synced_file = f"{path_to_mail_data}/{synced_file_name}"
+
+if os.path.exists(path_to_synced_file):
+    os.remove(f"{path_to_mail_data}/{synced_file_name}")
+else:
+    print("SyncedFilesInfo.plist not exist, continue")
 
 data_array = []
 
