@@ -47,8 +47,11 @@ name = data_array[0]
 position = data_array[1]
 number = data_array[2]
 email = data_array[3]
-residence = data_array[4]
-photo_name = data_array[5]
+address = data_array[4]
+residence = data_array[5]
+photo_name = data_array[6]
+first_sign_paragraph = data_array[7].split("!!НОВАЯСТРОКА!!")[0]
+second_sign_paragraph = data_array[7].split("!!НОВАЯСТРОКА!!")[1]
 
 with open(photo_name, "rb") as image_file:
      encoded_image_bytes = base64.b64encode(image_file.read())
@@ -57,7 +60,7 @@ encoded_image_string = str(encoded_image_bytes)[2:-1]
 with open ("sign.mailsignature", "r", encoding="utf-8") as sign_template:
     sign_template_string = sign_template.read()
 
-output_sign_string = sign_template_string.replace("!!NAME!!", name).replace("!!POSITION!!", position).replace("!!NUMBER!!", number).replace("!!EMAIL!!", email).replace("!!RESIDENCE!!", residence).replace("!!IMAGE!!", encoded_image_string)
+output_sign_string = sign_template_string.replace("!!NAME!!", name).replace("!!POSITION!!", position).replace("!!NUMBER!!", number).replace("!!EMAIL!!", email).replace("!!ADDRESS!!", address).replace("!!RESIDENCE!!", residence).replace("!!IMAGE!!", encoded_image_string).replace("!!SIGNPARTONE!!", first_sign_paragraph).replace("!!SIGNPARTTWO!!", second_sign_paragraph)
 
 with open (f"{path_to_library}{sign_name}.mailsignature", "w", encoding="utf-8") as output_file:
     output_file.write(output_sign_string)

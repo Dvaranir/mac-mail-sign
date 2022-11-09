@@ -15,27 +15,28 @@ Content-Type: text/html;
         <tr>
             <td style="text-align: right;">
                 <a href="https://asista.kz/restore-session">
-                    <SPAN class="Apple-string-attachment"><OBJECT height=95 width=95 type=application/x-apple-msg-attachment data="cid:4C7786D3-2211-4463-AB15-E557E670F73A@internaldomain.kz"></OBJECT></SPAN>
+                    <SPAN class="Apple-string-attachment"><OBJECT height=150 width=150 type=application/x-apple-msg-attachment data="cid:4C7786D3-2211-4463-AB15-E557E670F73A@internaldomain.kz"></OBJECT></SPAN>
                 </a>
             </td>
             <td style="width: 10px;"></td>
             <td>
-                <p style="margin:0 0 10px 0; font-weight: bold;">!!NAME!!</p>
-                <p style="margin:0; font-size: 13px;">!!POSITION!!</p>
-                <p style="margin:0; font-size: 13px;">!!NUMBER!!</p>
-                <p style="margin:0; font-size: 13px;">!!EMAIL!!</p>
-                <p style="margin:0; font-size: 13px;">!!RESIDENCE!!</p>
+                <p style="margin:0; font-weight: bold; font-size: 24px;">!!NAME!!</p>
+                <p style="margin:0 0 8px 0; font-size: 16px;">!!POSITION!!</p>
+                <p style="margin:0; font-size: 16px;">!!NUMBER!!</p>
+                <p style="margin:0; font-size: 16px;">!!EMAIL!!</p>
+                <p style="margin:0; font-size: 16px;">!!ADDRESS!!</p>
+                <p style="margin:0; font-size: 16px;">!!RESIDENCE!!</p>
             </td>
         </tr>
         <tr>
             <td>
-                <p style="margin:0; font-size: 9px; text-align: right; font-weight: bold;">Кликните на мой аватар,</p>
-                <p style="margin:0; font-size: 9px; text-align: right; font-weight: bold;">чтобы оставить заявку в asista</p>
+                <p style="margin:0; font-size: 12px; text-align: right; font-weight: bold;">!!SIGNPARTONE!!</p>
+                <p style="margin:0; font-size: 12px; text-align: right; font-weight: bold;">!!SIGNPARTTWO!!</p>
             </td>
             <td style="width: 10px;"></td>
-            <td style="vertical-align: bottom">
+            <td style="vertical-align: center;">
                 <a href="https://itsupport.kz/">
-                    <SPAN class="Apple-string-attachment"><OBJECT height=16 width=129 type=application/x-apple-msg-attachment data="cid:8D93A5C9-9FA5-443C-AE19-8E06B599FE99@internaldomain.kz"></OBJECT></SPAN>
+                    <SPAN class="Apple-string-attachment"><OBJECT height=20 width=180 type=application/x-apple-msg-attachment data="cid:8D93A5C9-9FA5-443C-AE19-8E06B599FE99@internaldomain.kz"></OBJECT></SPAN>
                 </a>
             </td>
         </tr>
